@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/mediaqueries.css">
+    </head>
     <body>
-        <nav id="desktop-nav">
-            <div class="logo">Vlad Virlan</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Vlad Virlan</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <header>
+            <nav id="desktop-nav">
+                <div class="logo">Vlad Virlan</div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
                 </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="logo">Vlad Virlan</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                        <li><a href="./blog.html" onclick="toggleMenu()">Blog</a></li>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <section id="profile">
             <div class="section__pic-container">
                 <img src="./assets/profile-pic.png" alt="Vlad Virlan Profile Picture" class="profile-pic">
@@ -44,7 +49,7 @@
                 <h1 class="title">Vlad Virlan</h1>
                 <p class="section__text__p2">Software Engineer</p>
                 <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
                     <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
                 </div>
                 <div id="socials-container">
@@ -58,7 +63,7 @@
             <h1 class="title">About Me</h1>
             <div class="section-container">
                 <div class="section__pic-container">
-                    <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
+                    <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic">
                 </div>
                 <div class="about-details-container">
                     <div class="about-containers">
@@ -74,7 +79,7 @@
                         </div>
                     </div>
                     <div class="text-container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ea! Deleniti, sint quibusdam. Provident corrupti eaque odio qui dolorum repudiandae corporis quod natus saepe suscipit est ab ipsa cum, reprehenderit impedit perspiciatis autem iusto consectetur porro sequi! Provident, nesciunt, porro similique repellendus laboriosam dolorem quo animi sequi rem commodi assumenda.</p>
+                        <p>I am a Computer Science undergraduate at a Russell Group University. My journey into programming began at nine years old, teaching myself to write programs through YouTube tutorials. Since then, I've worked with multiple languages, most notably Python and Java, which I regularly use to work on programming projects. I am ardent about problem-solving and often use my knowledge of mathematics and physics to tackle all manners of challenges that come my way. I bring resilience, discipline and hard work to every team I collaborate with and I am excited to contribute to the ever expanding industry that is the field of technology.</p>
                     </div>
                 </div>
             </div>
@@ -105,15 +110,15 @@
                             <article>
                                 <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                                 <div>
-                                    <h3>SASS</h3>
-                                    <p>Intermediate</p>
+                                    <h3>JavaScript</h3>
+                                    <p>Experienced</p>
                                 </div>
                             </article>
                             <article>
                                 <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                                 <div>
-                                    <h3>JavaScript</h3>
-                                    <p>Experienced</p>
+                                    <h3>React JS</h3>
+                                    <p>Intermediate</p>
                                 </div>
                             </article>
                             <article>
@@ -126,8 +131,8 @@
                             <article>
                                 <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                                 <div>
-                                    <h3>Material UI</h3>
-                                    <p>Basic</p>
+                                    <h3>Flutter</h3>
+                                    <p>Intermediate</p>
                                 </div>
                             </article>
                         </div>
@@ -192,12 +197,12 @@
                         <div class="article-container">
                             <img src="./assets/project-1.png" alt="Project 1" class="project-img">
                         </div>
-                        <h2 class="experience-sub-title">Project One</h2>
+                        <h2 class="experience-sub-title">Chess Engine</h2>
                         <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan'"> <!-- Update this! -->
-                                Github
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan/chess-engine'">
+                                GitHub
                             </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan'"> <!-- Update this! -->
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1aestx2AbVb8XGpc4OTdikRMaTGn_eNRG/view?usp=sharing'">
                                 Live Demo
                             </button>
                         </div>
@@ -206,12 +211,12 @@
                         <div class="article-container">
                             <img src="./assets/project-2.png" alt="Project 2" class="project-img">
                         </div>
-                        <h2 class="experience-sub-title">Project Two</h2>
+                        <h2 class="experience-sub-title">Dragon Slayer</h2>
                         <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan'"> <!-- Update this! -->
-                                Github
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan/dragon-slayer'">
+                                GitHub
                             </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan'"> <!-- Update this! -->
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://drive.google.com/file/d/1GXpqzw38BUFDbsWle4BNnbWsjtKeOUf2/view?usp=sharing'">
                                 Live Demo
                             </button>
                         </div>
@@ -220,12 +225,12 @@
                         <div class="article-container">
                             <img src="./assets/project-3.png" alt="Project 3" class="project-img">
                         </div>
-                        <h2 class="experience-sub-title">Project Three</h2>
+                        <h2 class="experience-sub-title">Love Letter</h2>
                         <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan'"> <!-- Update this! -->
-                                Github
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan/love-letter'">
+                                GitHub
                             </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com/VladVirlan'"> <!-- Update this! -->
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://vladvirlan.github.io/love-letter/'">
                                 Live Demo
                             </button>
                         </div>
@@ -256,11 +261,12 @@
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
                     </ul>
                 </div>
             </nav>
             <p>Copyright &#169; 2025 Andrei-Vlad Pisaltu-Virlan. All Rights Reserved.</p>
         </footer>
-        <script src="script.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
