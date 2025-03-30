@@ -18,15 +18,18 @@ p
     font-size: 1em;
 }
 
-h1 {
+h1
+{
     font-size: 2em;
 }
 
-h2 {
+h2
+{
     font-size: 1.5em;
 }
 
-h3 {
+h3
+{
     font-size: 1.17em;
 }
 
@@ -69,7 +72,7 @@ a:hover
 {
     color: grey;
     text-decoration: underline;
-    text-underline-offset: 1rem; /* OPTIONAL */
+    text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -94,6 +97,7 @@ a:hover
 {
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
 .hamburger-icon
@@ -144,7 +148,7 @@ a:hover
 
 .menu-links.open
 {
-    max-height: 300px;
+    max-height: 400px;
 }
 
 .hamburger-icon.open span:first-child
@@ -203,7 +207,7 @@ section
     height: 80vh;
 }
 
-.section__pic-container
+.section-pic-container
 {
     display: flex;
     height: 400px;
@@ -216,23 +220,23 @@ section
     border-radius: 50%;
 }
 
-.section__text
+.section-text
 {
     align-self: center;
     text-align: center;
 }
 
-.section__text p
+.section-text p
 {
     text-align: center;
 }
 
-.section__text__p1
+.section-text-p1
 {
     text-align: center;
 }
 
-.section__text__p2
+.section-text-p2
 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -349,7 +353,8 @@ section
 {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem; 
+    bottom: 2.5rem;
+    transform: rotate(-90deg);
 }
 
 .details-container
@@ -369,7 +374,7 @@ section
     height: 80%;
 }
 
-.section__pic-container
+.section-pic-container
 {
     height: 400px;
     width: 400px;

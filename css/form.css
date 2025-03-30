@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html, body {
+html, body
+{
     font-family: 'Poppins', sans-serif;
 }
 
-form {
+form
+{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6vh;
+    margin: 6vh 0 6vh 0;
     text-align: center;
 }
 
-fieldset {
+fieldset
+{
     padding: 1.5rem;
     background: white;
     border-radius: 2rem;
@@ -21,7 +24,8 @@ fieldset {
     text-align: center;
 }
 
-legend {
+legend
+{
     font-size: 1.5rem;
     font-weight: 600;
     background-color: rgb(53, 53, 53);
@@ -31,7 +35,8 @@ legend {
     border-radius: 2rem;
 }
 
-.input-box {
+.input-box
+{
     margin: 2rem auto;
     display: flex;
     justify-content: left;
@@ -42,16 +47,19 @@ legend {
     padding: 1rem;
 }
 
-svg {
-    height: 1.75rem;
-    width: 1.75rem;
+.input-box img
+{
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
-::placeholder {
+::placeholder
+{
     color: rgb(163, 163, 163);
 }
 
-input, textarea {
+input, textarea
+{
     font-weight: 600;
     color: rgb(53, 53, 53);
     border: none;
@@ -59,11 +67,13 @@ input, textarea {
     width: 100%;
 }
 
-input {
+input
+{
     font-size: 1.15rem;
 }
 
-textarea {
+textarea
+{
     font-size: 1rem;
     font-family: inherit;
     min-width: 16rem;
@@ -72,12 +82,14 @@ textarea {
     max-height: 40vh;
 }
 
-.buttons {
+.buttons
+{
     display: flex;
     justify-content: space-around;
 }
 
-button {
+button
+{
     font-size: inherit;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -89,17 +101,8 @@ button {
     color: black;
 }
 
-button:hover {
+button:hover
+{
     background: rgb(53, 53, 53);
     color: white;
-}
-
-@media screen and (max-width: 600px) {
-    .buttons {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        flex-direction: column;
-    }
 }

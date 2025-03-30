@@ -54,7 +54,7 @@
         margin: 0 5%;
     }
 
-    .section__pic-container
+    .section-pic-container
     {
         width: 275px;
         height: 275px;
@@ -123,14 +123,14 @@
         text-align: center;
     }
 
-    .section__pic-container
+    .section-pic-container
     {
         width: auto;
         height: 46vw;
         justify-content: center;
     }
 
-    .section__text__p2
+    .section-text-p2
     {
         font-size: 1.25rem;
     }
@@ -143,5 +143,14 @@
     .text-container
     {
         text-align: justify;
+    }
+
+    .buttons
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
     }
 }
