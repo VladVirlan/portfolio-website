@@ -15,4 +15,6 @@ document.getElementById("mobile-contact-link").addEventListener("click", toggleM
 document.getElementById("mobile-blog-link").addEventListener("click", toggleMenu);
 document.getElementById("mobile-portfolio-link").addEventListener("click", toggleMenu);
 document.getElementById("mobile-login-link").addEventListener("click", toggleMenu);
+document.getElementById("mobile-logout-link").addEventListener("click", toggleMenu);
 document.getElementById("mobile-addpost-link").addEventListener("click", toggleMenu);
+document.getElementById("mobile-viewblog-link").addEventListener("click", toggleMenu);

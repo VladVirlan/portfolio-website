@@ -106,3 +106,13 @@ button:hover
     background: rgb(53, 53, 53);
     color: white;
 }
+
+.error
+{
+    background-color: #ffe6e6;
+}
+
+.input-box.error
+{
+    border: red 0.1rem solid;
+}

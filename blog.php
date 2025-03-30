@@ -1,13 +1,13 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+        <title>Blog</title>
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/mediaqueries.css">
-        <link rel="stylesheet" href="./css/form.css">
         <script src="./js/script.js" defer></script>
     </head>
     <body>
@@ -17,7 +17,11 @@
                 <div>
                     <ul class="nav-links">
                         <li><a href="./blog.php">Home</a></li>
-                        <li><a href="./login.html">Login</a></li>
+                        <?php if (!isset($_SESSION['email'])): ?>
+                            <li><a href="./login.html">Login</a></li>
+                        <?php else: ?>
+                            <li><a href="./logout.php">Logout</a></li>
+                        <?php endif; ?>
                         <li><a href="./addEntry.php">Add Post</a></li>
                         <li><a href="./viewBlog.php">View Posts</a></li>
                         <li><a href="./index.html">Portfolio</a></li>
@@ -34,7 +38,11 @@
                     </div>
                     <div class="menu-links">
                         <li><a href="./blog.php" id="mobile-home-link">Home</a></li>
-                        <li><a href="./login.html" id="mobile-login-link">Login</a></li>
+                        <?php if (!isset($_SESSION['email'])): ?>
+                            <li><a href="./login.html" id="mobile-login-link">Login</a></li>
+                        <?php else: ?>
+                            <li><a href="./logout.php" id="mobile-logout-link">Logout</a></li>
+                        <?php endif; ?>
                         <li><a href="./addEntry.php" id="mobile-addpost-link">Add Post</a></li>
                         <li><a href="./viewBlog.php" id="mobile-viewblog-link">View Posts</a></li>
                         <li><a href="./index.html" id="mobile-portfolio-link">Portfolio</a></li>
@@ -42,26 +50,30 @@
                 </div>
             </nav>
         </header>
-        <form action="login.php" method="POST">
-            <fieldset>
-                <legend>Login</legend>
-                <div class="input-box">
-                    <img src="./assets/email1.png" alt="Email Logo">
-                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required>
-                </div>
-                <div class="input-box">
-                    <img src="./assets/password.png" alt="Password Logo">
-                    <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
-                </div>
-                <button type="submit">Sign In</button>
-            </fieldset>
-        </form>
+        <section id="main">
+            <p class="section-text-p1">Welcome To</p>
+            <h1 class="title">My Blog</h1>
+            <div style="margin-top: 2rem; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1rem;"> <!-- REMOVE THIS -->
+                <a href="./viewBlog.php"><button class="btn btn-color-2">View Posts</button></a>
+                <?php if (!isset($_SESSION['email'])): ?>
+                    <a href="./login.html"><button class="btn btn-color-2">Login</button></a>
+                <?php else: ?>
+                    <h2>Welcome Admin</h2>
+                    <a href="./addEntry.php"><button class="btn btn-color-2">Add Post</button></a>
+                    <a href="./logout.php"><button class="btn btn-color-2">Logout</button></a>
+                <?php endif; ?>
+            </div>
+        </section>
         <footer>
             <nav>
                 <div class="nav-links-container">
                     <ul class="nav-links">
                         <li><a href="./blog.php">Home</a></li>
-                        <li><a href="./login.html">Login</a></li>
+                        <?php if (!isset($_SESSION['email'])): ?>
+                            <li><a href="./login.html">Login</a></li>
+                        <?php else: ?>
+                            <li><a href="./logout.php">Logout</a></li>
+                        <?php endif; ?>
                         <li><a href="./addEntry.php">Add Post</a></li>
                         <li><a href="./viewBlog.php">View Posts</a></li>
                         <li><a href="./index.html">Portfolio</a></li>
