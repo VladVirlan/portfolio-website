@@ -53,7 +53,7 @@
         <section id="main">
             <p class="section-text-p1">Welcome To</p>
             <h1 class="title">My Blog</h1>
-            <div style="margin-top: 2rem; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1rem;"> <!-- REMOVE THIS -->
+            <div id="dashboard">
                 <a href="./viewBlog.php"><button class="btn btn-color-2">View Posts</button></a>
                 <?php if (!isset($_SESSION['email'])): ?>
                     <a href="./login.html"><button class="btn btn-color-2">Login</button></a>

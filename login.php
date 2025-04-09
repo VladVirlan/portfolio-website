@@ -20,10 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: addEntry.php");
             exit();
         } else {
-            echo "Email or password is incorrect.";
+            header("Location: login.html?error=1");
+            exit();
         }
     } else {
-        echo "Email or password is incorrect.";
+        header("Location: login.html?error=1");
+        exit();
     }
 }
 ?>

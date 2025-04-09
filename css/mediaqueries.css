@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px)
+@media only screen and (max-width: 1400px)
 {
     #profile
     {
@@ -17,7 +17,7 @@
     }
 }
 
-@media screen and (max-width: 1200px)
+@media only screen and (max-width: 1200px)
 {
     #desktop-nav
     {
@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and (max-width: 600px)
+@media only screen and (max-width: 768px)
 {
     #contact, footer
     {

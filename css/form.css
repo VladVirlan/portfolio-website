@@ -1,9 +1,13 @@
+/* GENERAL */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html, body
 {
     font-family: 'Poppins', sans-serif;
 }
+
+/* FORM */
 
 form
 {
@@ -34,6 +38,8 @@ legend
     width: 10rem;
     border-radius: 2rem;
 }
+
+/* INPUTS */
 
 .input-box
 {
@@ -82,10 +88,13 @@ textarea
     max-height: 40vh;
 }
 
+/* BUTTONS */
+
 .buttons
 {
     display: flex;
     justify-content: space-around;
+    gap: 1rem;
 }
 
 button
@@ -107,6 +116,8 @@ button:hover
     color: white;
 }
 
+/* ERROR HANDLING */
+
 .error
 {
     background-color: #ffe6e6;
@@ -115,4 +126,47 @@ button:hover
 .input-box.error
 {
     border: red 0.1rem solid;
+}
+
+#error-message
+{
+    margin: 1rem;
+    color: red;
+}
+
+.hidden
+{
+    display: none;
+}
+
+/* DROPDOWN MENU */
+
+#dropdown-menu
+{
+    gap: 1rem;
+}
+
+label
+{
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+}
+
+select
+{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+    width: 50%;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+/* PREVIEW FORM */
+
+.preview-form
+{
+    margin: 1rem 0;
+    padding: 0;
 }

@@ -4,6 +4,14 @@ if (!isset($_SESSION['email'])) {
     header("Location: login.html");
     exit();
 }
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $title = '';
+    $content = '';
+} else {
+    $title = isset($_POST['title']) ? htmlspecialchars($_POST['title'], ENT_QUOTES) : '';
+    $content = isset($_POST['content']) ? htmlspecialchars($_POST['content'], ENT_QUOTES) : '';
+}
 ?>
 
 <!DOCTYPE html>
@@ -63,14 +71,16 @@ if (!isset($_SESSION['email'])) {
             <fieldset>
                 <legend>Add Post</legend>
                 <div class="input-box" id="title-input-box">
-                    <input type="text" id="title" name="title" placeholder="Title" autocomplete="off">
+                    <input type="text" id="title" name="title" placeholder="Title" autocomplete="off" value="<?= $title ?>">
                 </div>
                 <div class="input-box" id="content-input-box">
-                    <textarea name="content" id="content" placeholder="Enter your text here" autocomplete="off"></textarea>
+                    <textarea name="content" id="content" placeholder="Enter your text here" autocomplete="off"><?= $content ?></textarea>
                 </div>
+                <input type="hidden" id="preview-mode" name="preview" value="false">
                 <div class="buttons">
-                    <button type="submit">Add Post</button>
-                    <button type="reset">Clear</button>        
+                    <button type="submit" id="add-post-button">Add Post</button>
+                    <button type="button" id="preview-button">Preview</button>
+                    <button type="reset">Clear</button>
                 </div>
             </fieldset>
         </form>

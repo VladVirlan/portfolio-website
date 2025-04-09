@@ -516,3 +516,35 @@ footer p
 {
     text-align: center;
 }
+
+/* BLOG DASHBOARD */
+#dashboard
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* BLOG POST */
+.post-date
+{
+    font-size: 1rem;
+    font-style: italic;
+    text-align: right;
+}
+
+.post-title
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.post-content
+{
+    font-size: 1.15rem;
+    margin: 0.5rem 0;
+}
